@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>网页Test</title>
+</head>
+
+<body>
+	<a href='http://www.baidu.com/'>点击下载</a>
+	<label for="">输入</label>
+	<input type="text" id='modeltest'>
+	<!-- <label for="">同步</label> -->
+	<div id='tongbu'></div>
+	<script src="./JS/ObjectDefineProperty.js"></script>
+	<script src="./JS//proxy.js"></script>
+	<script>
+		var Person = Person.Person
+		let p = new Person('chen', 12)
+		console.log(p.toString)
+	</script>
+	<!-- <script>
+		var user = {}
+        var name = 'chenhao'
+        var modeltest = document.getElementById('modeltest')
+        var tongbu = document.querySelector('#tongbu')
+        modeltest.value = name
+        tongbu.textContent = name
+        Object.defineProperty(user, 'name', {
+            set: function (value) {
+                modeltest.textContent = value
+                tongbu.textContent = value
+                name = value
+            },
+            get: function () {
+                return name;
+            }
+        })
+        modeltest.addEventListener('keyup', function () {
+            console.log('key up')
+            user.name = this.value
+
+        }, false)
+	</script> -->
+</body>
+
+</html>
